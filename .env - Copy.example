@@ -1,0 +1,11 @@
+# Copy to .env (never commit .env). Only PUBLIC values belong here:
+# anything starting with VITE_ is embedded in the browser bundle.
+VITE_SUPABASE_URL=https://YOUR-PROJECT-REF.supabase.co
+VITE_SUPABASE_ANON_KEY=YOUR-ANON-PUBLIC-KEY
+
+# Optional: internal email domains used to map Employee ID / Roll No to Supabase Auth.
+# Must match the Edge Function secrets of the same name if you change them.
+# VITE_AUTH_EMAIL_DOMAIN_STAFF=staff.pmen-portal.app
+# VITE_AUTH_EMAIL_DOMAIN_STUDENT=students.pmen-portal.app
+
+# NEVER add the service_role key here. It lives only inside Supabase (Edge Function secrets).
